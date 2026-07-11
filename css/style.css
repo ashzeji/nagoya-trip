@@ -1,7 +1,7 @@
 /* Website template by freewebsitetemplates.com */
 body {
-	background: #8c9e6b  url(../images/bg-body.jpg) repeat left bottom;
-	font-family: "Times New Roman", Times, serif;
+	background: #d9a441  url(../images/bg-body.jpg) repeat left bottom;
+	font-family: "Georgia", serif;
 	margin: 0;
 }
 #background {
@@ -93,14 +93,14 @@ img {
 	padding: 0 47px;
 }
 #contents h1 {
-	color: #b23a48;
+	color: #8b2e2e;
 	font: 26px/30px "Times New Roman", Times, serif;
 	margin: 18px 0 20px;
 	padding-left: 2px;
 	text-transform: uppercase;
 }
 #contents div.body h1, #contents h2 {
-	color: #b23a48;
+	color: #8b2e2e;
 	font: 30px/30px "Times New Roman", Times, serif;
 	margin: 0 0 18px;
 	text-transform: uppercase;
@@ -110,21 +110,21 @@ img {
 	margin: 0 0 30px;
 }
 #contents h2 a {
-	color: #b23a48;
+	color: #8b2e2e;
 	text-decoration: none;
 }
 #contents p {
-	color: #3e3a34;
+	color: #3d3529;
 	font-size: 15px;
 	line-height: 30px;
 	margin: 0;
 	padding: 0 0 24px 2px;
 }
 #contents p a {
-	color: #3e3a34;
+	color: #3d3529;
 }
 #contents p a:hover, #news div.sidebar ul li a:hover {
-	color: #917157;
+	color: #3d3529;
 }
 /** box-shadow **/
 #contents div.box {
