@@ -1,6 +1,6 @@
 /* Website template by freewebsitetemplates.com */
 body {
-	background: #ffb744 url(../images/bg-body.jpg) repeat left bottom;
+	background: #8c9e6b  url(../images/bg-body.jpg) repeat left bottom;
 	font-family: "Times New Roman", Times, serif;
 	margin: 0;
 }
@@ -93,14 +93,14 @@ img {
 	padding: 0 47px;
 }
 #contents h1 {
-	color: #316e66;
+	color: #b23a48;
 	font: 26px/30px "Times New Roman", Times, serif;
 	margin: 18px 0 20px;
 	padding-left: 2px;
 	text-transform: uppercase;
 }
 #contents div.body h1, #contents h2 {
-	color: #316e66;
+	color: #b23a48;
 	font: 30px/30px "Times New Roman", Times, serif;
 	margin: 0 0 18px;
 	text-transform: uppercase;
@@ -110,18 +110,18 @@ img {
 	margin: 0 0 30px;
 }
 #contents h2 a {
-	color: #2c9688;
+	color: #b23a48;
 	text-decoration: none;
 }
 #contents p {
-	color: #5a4535;
+	color: #3e3a34;
 	font-size: 15px;
 	line-height: 30px;
 	margin: 0;
 	padding: 0 0 24px 2px;
 }
 #contents p a {
-	color: #5a4535;
+	color: #3e3a34;
 }
 #contents p a:hover, #news div.sidebar ul li a:hover {
 	color: #917157;
