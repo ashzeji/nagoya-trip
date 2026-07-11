@@ -2,10 +2,71 @@
 <!-- Website template by freewebsitetemplates.com -->
 <html>
 <head>
-	<div id="welcome-message" style="opacity: 0; transition: opacity 1.5s;"></div>
 	<meta charset="UTF-8">
-	<title>Visit My Trip to Nagoya</title>
+	<title>My Trip to Nagoya</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<style>
+		/* --- New CSS added for this website (requirement d) --- */
+		#template-credit {
+			background: #fff3cd;
+			color: #7a5b12;
+			border: 2px solid #e0b84b;
+			border-radius: 8px;
+			text-align: center;
+			font-size: 15px;
+			padding: 10px;
+			margin: 15px 0;
+		}
+		#welcome-message {
+			background: linear-gradient(135deg, #b23a48, #e08a3e);
+			color: #fff;
+			font-size: 20px;
+			font-weight: bold;
+			text-align: center;
+			padding: 20px;
+			border-radius: 12px;
+			box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+			margin: 20px 0;
+			opacity: 0;
+			transition: opacity 1.2s ease-in;
+		}
+		#trip-calculator {
+			background: #f4ede1;
+			border: 2px solid #316e66;
+			border-radius: 10px;
+			padding: 20px;
+			margin: 20px 0;
+			text-align: center;
+		}
+		#trip-calculator h3 {
+			color: #316e66;
+			margin-top: 0;
+		}
+		#trip-calculator input {
+			padding: 6px;
+			margin: 5px;
+			border-radius: 4px;
+			border: 1px solid #316e66;
+		}
+		#trip-calculator button {
+			background: #316e66;
+			color: #fff;
+			border: none;
+			padding: 8px 16px;
+			border-radius: 4px;
+			cursor: pointer;
+			margin: 5px;
+		}
+		#trip-calculator button:hover {
+			background: #24504a;
+		}
+		#daysResult {
+			font-weight: bold;
+			color: #b23a48;
+			font-size: 17px;
+			margin-top: 10px;
+		}
+	</style>
 </head>
 <body>
 	<div id="background">
@@ -41,43 +102,62 @@
 				</div>
 			</div>
 			<div id="contents">
+
+				<!-- Visible link to original template (requirement e) -->
+				<div id="template-credit">
+					This website was built by modifying a free template. View the
+					<a href="PASTE_EXACT_TEMPLATE_URL_HERE" target="_blank">original template here</a>.
+				</div>
+
+				<!-- Welcome message inserted via JS (requirement a) -->
+				<div id="welcome-message"></div>
+
 				<div id="adbox">
 					<img src="images/sea-sound.jpg" alt="Img">
-					<h1>My first trip to Nagoya</h1>
+					<h1>My Trip to Nagoya</h1>
 					<p>
-						First of all, I am so excited to share the memories I have created during my trip to this wonderful place in Japan. We did lots of activities, including: Riding the tallest active roller coaster in Japan, Winning cute plushies at Taito. We also had a taste of local foods, cultural landmarks, and the nightlife.  
+						Write a short intro here about your trip — when you went, why you chose Nagoya, and what this website covers.
 					</p>
 				</div>
+
+				<!-- Custom JS function (requirement c) -->
+				<div id="trip-calculator">
+					<h3>How many days ago was my trip?</h3>
+					<input type="date" id="tripDateInput">
+					<button onclick="calculateDaysAgo()">Calculate</button>
+					<p id="daysResult"></p>
+				</div>
+
 				<div id="main">
 					<div class="box">
 						<div>
 							<div>
-								<h3>Latest Blog</h3>
+								<h3>Trip Diary</h3>
 								<ul>
 									<li>
-										<h4><a href="news.html">2023 Bikini Contest Winners</a></h4>
-										<span>April 02, 2023</span>
+										<h4><a href="news.html">Day 1: Arriving in Nagoya</a></h4>
+										<span>Write the date here</span>
 										<p>
-											Integer magna leo, posuere et dignissim vitae, porttitor at odio. Pellentesque a metus nec magna placerat volutpat. Nunc nisi mi, elementum sit amet...
+											Write a short preview of your first day here...
 										</p>
 									</li>
 									<li>
-										<h4><a href="news.html">Top 10 Diving Spots</a></h4>
-										<span>May 29, 2023</span>
+										<h4><a href="news.html">Nagoya Castle Visit</a></h4>
+										<span>Write the date here</span>
 										<p>
-											Maecenas scelerisque odio quis arcu fringilla malesuada. Nulla facilisi. In libero nulla, fermentum ut pretium ac, pharetra et eros...
+											Write a short preview about visiting the castle here...
 										</p>
 									</li>
 								</ul>
 							</div>
 						</div>
 					</div>
-					<div id="Source of Template" class="box">
+					<div id="testimonials" class="box">
 						<div>
 							<div>
-								<h3> <a href="https://freewebsitetemplates.com/preview/beachresort/index.html">Source of Template</a></h3>
+								<h3>Highlights</h3>
 								<p>
-									I'd also like to thank <a href="https://freewebsitetemplates.com/preview/beachresort/index.html">Free Website Templates</a> for making this template; it fits my idea perfectly.
+									Write a favorite quote or memory from your trip here. <span>- Your Name</span>
 								</p>
 							</div>
 						</div>
@@ -121,23 +201,48 @@
 						<a href="contact.html">Contact</a>
 					</li>
 				</ul>
-				<div id="connect">
-					<a href="http://pinterest.com/fwtemplates/" target="_blank" class="pinterest"></a> <a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" class="facebook"></a> <a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" class="twitter"></a> <a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" class="googleplus"></a>
-				</div>
 			</div>
 			<p>
-				Student ID: 24229018 | Name: Ashidbileg Erdenejav
+				ID: [YOUR_STUDENT_ID] | Name: [YOUR_NAME]
 			</p>
 		</div>
 	</div>
-<script>
-  window.onload = function() {
-    const msg = document.getElementById("welcome-message");
-    msg.innerText = "Welcome to my Nagoya trip website!!!";
-    setTimeout(function() {
-      msg.style.opacity = 1;
-    }, 300);
-  };
-</script>
+
+	<!-- Welcome message + custom JS function scripts (index.html only) -->
+	<script>
+		window.onload = function() {
+			const hour = new Date().getHours();
+			let greeting;
+			if (hour < 12) {
+				greeting = "Good morning! Welcome to my Nagoya trip website ☀️";
+			} else if (hour < 18) {
+				greeting = "Good afternoon! Welcome to my Nagoya trip website 🏯";
+			} else {
+				greeting = "Good evening! Welcome to my Nagoya trip website 🌙";
+			}
+			const msg = document.getElementById("welcome-message");
+			msg.innerText = greeting;
+			setTimeout(function() {
+				msg.style.opacity = 1;
+			}, 300);
+		};
+
+		function calculateDaysAgo() {
+			const inputDate = new Date(document.getElementById("tripDateInput").value);
+			const today = new Date();
+			const diffTime = today - inputDate;
+			const diffDays = Math.round(diffTime / (1000 * 60 * 60 * 24));
+
+			if (isNaN(diffDays)) {
+				document.getElementById("daysResult").innerText = "Please pick a valid date!";
+			} else if (diffDays < 0) {
+				document.getElementById("daysResult").innerText = "That date is in the future!";
+			} else if (diffDays === 0) {
+				document.getElementById("daysResult").innerText = "That's today!";
+			} else {
+				document.getElementById("daysResult").innerText = "That was " + diffDays + " day(s) ago!";
+			}
+		}
+	</script>
 </body>
 </html>
