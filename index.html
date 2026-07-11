@@ -2,7 +2,7 @@
 <!-- Website template by freewebsitetemplates.com -->
 <html>
 <head>
-	<div id="welcome-message"></div>
+	<div id="welcome-message" style="opacity: 0; transition: opacity 1.5s;"></div>
 	<meta charset="UTF-8">
 	<title>Visit My Trip to Nagoya</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
@@ -131,7 +131,13 @@
 		</div>
 	</div>
 <script>
-  document.getElementById("welcome-message").innerText = "Welcome to my Nagoya trip website! Thanks for stopping by!🍜🏯";
+  window.onload = function() {
+    const msg = document.getElementById("welcome-message");
+    msg.innerText = "Welcome to my Nagoya trip website! 🍜🏯";
+    setTimeout(function() {
+      msg.style.opacity = 1;
+    }, 300);
+  };
 </script>
 </body>
 </html>
