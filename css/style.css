@@ -94,14 +94,14 @@ img {
 }
 #contents h1 {
 	color: #8b2e2e;
-	font: 26px/30px "Times New Roman", Times, serif;
+	font: 26px/30px "Georgia", serif;
 	margin: 18px 0 20px;
 	padding-left: 2px;
 	text-transform: uppercase;
 }
 #contents div.body h1, #contents h2 {
 	color: #8b2e2e;
-	font: 30px/30px "Times New Roman", Times, serif;
+	font: 30px/30px "Georgia", serif;
 	margin: 0 0 18px;
 	text-transform: uppercase;
 }
@@ -114,17 +114,17 @@ img {
 	text-decoration: none;
 }
 #contents p {
-	color: #3d3529;
+	color: #8b2e2e;
 	font-size: 15px;
 	line-height: 30px;
 	margin: 0;
 	padding: 0 0 24px 2px;
 }
 #contents p a {
-	color: #3d3529;
+	color: #8b2e2e;
 }
 #contents p a:hover, #news div.sidebar ul li a:hover {
-	color: #3d3529;
+	color: #8b2e2e;
 }
 /** box-shadow **/
 #contents div.box {
@@ -195,7 +195,7 @@ hr {
 	text-transform: uppercase;
 }
 #main div.box h4 {
-	font: 22px/24px "Times New Roman", Times, serif;
+	font: 22px/24px "Georgia", serif;
 	font-weight: normal;
 	margin: 6px 0 0;
 }
@@ -285,7 +285,7 @@ hr {
 #rooms .rate {
 	color: #316e66;
 	display: inline-block;
-	font: 16px/35px "Times New Roman", Times, serif;
+	font: 16px/35px "Georgia", serif;
 	height: 35px;
 	width: 138px;
 	border: 1px solid #5a4535;
@@ -312,8 +312,7 @@ hr {
 }
 #foods li > div.infos p span {
 	display: block;
-	font: 22px/22px "Times New Roman", Times, serif;
-}
+	font: 22px/22px "Georgia", serif;
 #foods li > div.infos:hover span.cover {
 	background: url(../images/bg-foodInfos.png) repeat;
 	display: inline-block;
@@ -355,7 +354,7 @@ hr {
 #news > div span {
 	color: #5a4535;
 	display: block;
-	font: 15px/24px "Times New Roman", Times, serif;
+	font: 15px/24px "Georgia", serif;
 	margin-bottom: 30px;
 }
 #news > div span.author {
